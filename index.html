@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </head>
+    <body>
+      <div class="intro">
+        <h2>Address Enrichment</h2>
+        <p>You may have unreliable address data that you have collected from your users. This information could be recorded in a rush, or on the phone and may not be high quality. When you have incorrect or incomplete address data, you can use HERE Geocoding APIs to help you select the correct or closest match. Here's an example for you to try the service:</p>
+      </div>
+      <div class="flex-container">
+        <div class="singleAddressSearch">
+          <label for="singleAddressSearch">Search for a single address</label>
+          <input type="singleAddressSearch" id="singleAddressSearchQuery" name="q"
+                 aria-label="Search through site content">
+          <button id="singleAddressSearchButton">Search</button>
+        </div>
+        <div class="uploadInput" id="inputdiv">
+          <form id="uploadForm" name="uploadForm">
+            <div>
+              <input id="uploadInput" type="file" name="myFiles" accept=".csv">
+
+            </div>
+          </form>
+        </div>
+        <div id="downloadBtn">
+        </div>
+      </div>
+    </body>
+</html>

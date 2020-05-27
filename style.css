@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
+li#correct {
+  background-color: rgb(200,230,201, 1);
+}
+
+li#incomplete {
+  background-color: rgb(255,138,101, 1);
+}
+
+#uploadButton {
+  cursor: pointer;
+}
+
+ul,ol {
+ list-style-type: none;
+ padding-inline-start: 0;
+}
+
+#downloadBtn {
+  vertical-align: bottom;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+h2 {
+  align-self: center;
+}
